@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator (Final Version)</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+	<div class="container" id="container">
+
+        <div class="header">
+            <h2>BMI Calculator</h2>
+        </div>
+
+        <div class="form"></div>
+            <div class="input-group">
+                <label for="name">Name<span class="required">*</span></label>
+                <input type="text" name="name" id="name" placeholder="Elon Musk" autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <label for="height">Height range in metres<span class="required">*</span></label>
+                <input type="text" name="height" id="height" placeholder="Start eg: 1.77" autocomplete="off">
+                <input type="text" name="height2" id="height2" placeholder="End eg: 1.80" autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <label for="weight">Weight range in Kg<span class="required">*</span></label>
+                <input type="text" name="weight" id="weight" placeholder="Start eg: 76.5" autocomplete="off">
+                <input type="text" name="weight2" id="weight2" placeholder="End eg: 78.5" autocomplete="off">
+            </div>
+
+            <div class="btn-wrapper">
+                <input type="button" name="button" class="btn "id="btn" value="Calculate" onclick="Validate()">
+            </div>  
+
+            <div class="stats">
+                <p>Below 18.5 = Underweight </p>
+                <p>Between 18.5 - 24.9 = Normal</p>
+                <p>Between 25.0 - 29.9 = Overweight</p>
+                <p>Between 30.0 - 34.9 = Obese Class 1</p>
+                <p>Between 35.0 - 39.9 = Obese Class 2</p>
+                <p>Above 40.0 = Obese Class 3</p>
+            </div>
+
+
+            <div class="table-wrapper">`
+                <table class="table" id="table">
+                    <tr class="table-info">
+                        <th>Name</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>BMI</th>
+                        <th>Results</th>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
